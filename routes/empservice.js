@@ -1,7 +1,7 @@
 const express = require ('express');
 const router = express.Router();
-var ed=require('./dao/empdo');
-var MongoClient = require ('mongodd').MongoClient;
+var ed=require('./dao/empdao');
+var MongoClient = require ('mongodb').MongoClient;
 var url = 'mongodb://localhost:27017/mercury';
 
 router.get('/emp',(req, res) =>{    /* get请求 （req,res）是promise */

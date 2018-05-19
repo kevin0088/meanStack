@@ -49,10 +49,10 @@ app.controller("updateCtrl", ["$scope", "es", "$location", "$routeParams",
         }
     }]);
 
-app.config(["$routeProvider", function ($routeProvider) {
+app.config(["$routeProvider", function ($routeProvider) {           //$routeProvider is the keyword to define 前台路由。
     $routeProvider.when("/home", {
-        templateUrl: 'template/home.html',
-        controller: "homeCtrl"
+        templateUrl: 'template/home.html',  //templateUrl作用是：从当前跳到哪个页面。
+        controller: "homeCtrl"              //
     }).when("/add", {
         templateUrl: 'template/add.html',
         controller: "addCtrl"

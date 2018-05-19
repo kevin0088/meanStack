@@ -12,20 +12,20 @@
 
 
 </head>
-<body ng-app="mainApp"> //ng-app 是angular js 借口interface的入口。  base on different controlor.
 
-<div ng-controller="mainCtrl" class="contrainer"> //  angular-controller is based on different component组件。
+<body ng-app="mainApp"><!--//ng-app 是angularJS接口interface。是所有JS的的入口。  base on different controller.-->
+
+<div ng-controller="homeCtrl" class="container"> <!--//  这是controlller。angular-controller is based on different component组件。-->
 
 
     <h1> Mean stack application </h1>
     <hr>
     <nav>
-        <a href="#hime">Home</a> // #是访问sigle page
+        <a href="#hime">Home</a>   <!--// #是访问sigle page-->
         <a href="#add">add</a>
         <a href="#show">slide show</a>
     </nav>
-    <div ng-view> </div>   // ng-view 是加载single page 地方。
-
+    <div ng-view> </div> <!--// ng-view 是加载single page 地方。-->
 </div>
 </body>
 </html>
